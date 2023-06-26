@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Website</title>
+  <style>
+    /* Styles for the quiz */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #555;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .options {
+      list-style: none;
+      padding-left: 0;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .options input[type="radio"] {
+      margin-right: 10px;
+    }
+    .submit-btn {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .score {
+      text-align: center;
+      color: #555;
+    }
+    .made-by {
+      text-align: center;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Website</h1>
+    <div id="quiz">
+      <div class="question">
+        <p>Q1. हिस्सादार ने इंजन के साथ क्या किया और ऐसा करने के बाद बस का क्या हुआ?</p>
+        <ul class="options">
+          <li>
+            <label>
+              <input type="radio" name="q1" value="option1">
+              <span class="option-label">हिस्सेदार ने इंजन खोला और कुछ सुधारा, जिससे बस की स्पीड कम हो गई थी।</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q1" value="option2">
+              <span class="option-label">हिस्सेदार ने इंजन खोला और कुछ सुधारा, जिससे बस की स्पीड बढ़ गई थी।</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q1" value="
+
+option3">
+              <span class="option-label">हिस्सेदार ने इंजन खोला और कुछ सुधारा, जिससे बस ठीक से नहीं चली।</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q1" value="option4">
+              <span class="option-label">हिस्सेदार ने इंजन खोला और कुछ सुधारा, जिससे बस खाराब हो गई थी।</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Q2. बस ने क्या कहा जब उसने एक कार को आगे या पीछे आते हुए देखा।</p>
+        <ul class="options">
+          <li>
+            <label>
+              <input type="radio" name="q2" value="option1">
+              <span class="option-label">निकल जाओ, - बेटी! अपनी तो वह उम्र ही नहीं रही।</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q2" value="option2">
+              <span class="option-label">खूबसूरत कार है, बहुत आगे जाओ!</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q2" value="option3">
+              <span class="option-label">इतनी महंगी कार है, इसे पीछे जाने दो!</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q2" value="option4">
+              <span class="option-label">यह कार नयी है, बस के पास आने दो!</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Q3. यदि बस स्पीड में होती तो वह कहां गिरती?</p>
+        <ul class="options">
+          <li>
+            <label>
+              <input type="radio" name="q3" value="option1">
+              <span class="option-label">यह नाले में गिर जाएगा।</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q3" value="option2">
+              <span class="
+
+option-label">यह सड़क के बीच में गिर जाएगा।</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q3" value="option3">
+              <span class="option-label">यह पेड़ को टकरा जाएगा।</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q3" value="option4">
+              <span class="option-label">यह पासेंजरों के ऊपर उड़ जाएगा।</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="question">
+        <p>Q4. लेखक के अनुसार हिस्सादार के लिए सबसे अच्छा काम क्या है?</p>
+        <ul class="options">
+          <li>
+            <label>
+              <input type="radio" name="q4" value="option1">
+              <span class="option-label">क्रांतिकारी आंदोलन का नेता</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q4" value="option2">
+              <span class="option-label">चिकन टिक्का विक्रेता</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q4" value="option3">
+              <span class="option-label">टेलीविजन एंकर</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="q4" value="option4">
+              <span class="option-label">निर्माण कार्यकर्ता</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <button class="submit-btn" onclick="submitQuiz()">Submit</button>
+      <div id="score" class="score"></div>
+      <div class="made-by">Made by Anirudh</div>
+    </div>
+  </div>
+  <script>
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function submitQuiz() {
+      const quizContainer = document.getElementById("quiz");
+      const questions = quizContainer.getElementsByClassName("question");
+      let score = 0;
+
+      for (let i = 0; i < questions.length; i++) {
+        const question = questions[i];
+        const options = question.getElementsByClassName("option-label");
+        const selectedOption = question.querySelector("input[type='radio']:checked");
+
+        if (selectedOption) {
+          const userAnswer = selectedOption.value;
+          const correctAnswer = selectedOption.getAttribute
+
+("data-correct-answer");
+
+          if (userAnswer === correctAnswer) {
+            score++;
+          }
+        }
+      }
+
+      const scoreContainer = document.getElementById("score");
+      scoreContainer.innerHTML = "Your score: " + score + "/" + questions.length;
+    }
+
+    // Shuffle options for each question
+    const questions = document.getElementsByClassName("question");
+    for (let i = 0; i < questions.length; i++) {
+      const options = questions[i].getElementsByClassName("option-label");
+      const shuffledOptions = shuffleArray(Array.from(options));
+      const optionsContainer = questions[i].getElementsByClassName("options")[0];
+      optionsContainer.innerHTML = "";
+      shuffledOptions.forEach(option => {
+        const li = document.createElement("li");
+        const label = document.createElement("label");
+        const input = document.createElement("input");
+        const span = document.createElement("span");
+        input.type = "radio";
+        input.name = "q" + (i + 1);
+        input.value = option.getAttribute("data-option-value");
+        span.className = "option-label";
+        span.innerHTML = option.innerHTML;
+        label.appendChild(input);
+        label.appendChild(span);
+        li.appendChild(label);
+        optionsContainer.appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>
