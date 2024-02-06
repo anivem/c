@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirudh Vempati - RoboCoder</title>
+    <!-- Add link to favicon -->
+    <link rel="icon" href="https://anivem.github.io/c/14.jpg" type="image/png">
+    <style>
+        .image-pair {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+        
+        .image-pair img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        img {
+            width: 30%;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #009688;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            animation: slide-down 1s ease;
+        }
+        
+        @keyframes slide-down {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fade-in 2s ease;
+        }
+        
+        footer {
+            background-color: #009688;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: slide-up 1s ease;
+        }
+        
+        @keyframes slide-up {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        .image-container {
+            margin: 20px 0;
+        }
+        
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: fade-in 10s ease;
+        }
+        
+        button:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Anirudh Vempati</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Welcome to the world of Anirudh Vempati, a passionate young individual born on May 19, 2010 in Hyderabad, Telangana, India. Anirudh is not just an ordinary youngster; he is a maker, a coder, and a visionary with a keen interest in robotics and football.</p>
+    </section>
+
+    <section id="age">
+        <h2>His Current Age:</h2>
+        <p id="currentAge"></p>
+        <script>
+            // Get the birthdate and current date
+            var birthDate = new Date("2010-05-19");
+            var currentDate = new Date();
+
+            // Calculate the age in years
+            var ageInMilliseconds = currentDate - birthDate;
+            var ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+
+            // Display the age
+            document.getElementById("currentAge").innerText = Math.floor(ageInYears) + " years";
+        </script>
+    </section>
+
+    <section id="youtube-channel">
+        <h2>About His YouTube Channel - RoboCoder</h2>
+        <p>He has a YouTube channel called RoboCoder where he shares coding tutorials, Arduino projects, and showcases how to use Witblox, a fun robotics kit for young inventors.</p>
+        <div class="image-container">
+            <img src="https://anivem.github.io/c/38.jpg" alt="RoboCoder YouTube Channel">
+        </div>
+        <button background-color: red; onclick="window.open('https://www.youtube.com/@robocoder217?sub_confirmation=1', '_blank')">Subscribe Now</button>
+    </section>
+
+    <section id="blog">
+        <h2>About His Blog - Techumination</h2>
+        <p>Explore his blog, Techumination, where he shares his views, observations, learnings, and perspectives on science and robotics.</p>
+        <button onclick="window.open('https://techumination.blogspot.com/', '_blank')">Visit the Blog</button>
+    </section>
+
+    <!-- Continue adding more sections as per your instructions -->
+
+    <section id="school-projects">
+        <h2>School Projects</h2>
+        <p>During the Gnanapradarshini (Edu Fair) at his school, he showcased his innovative project called "OmniJob Guardian." It is a four-in-one device that handles automatic plant watering, fire detection, smoke detection, and object detection, all controllable through a mobile app developed by him.</p>
+        <div class="image-container">
+            <img src="https://anivem.github.io/c/13.jpg">
+            <img src="https://anivem.github.io/c/19.JPG">
+            <img src="https://anivem.github.io/c/28.jpg">
+        </div>
+    </section>
+
+    <section id="witblox">
+        <h2>Witblox - The Maker</h2>
+        <p>He is a proud maker associated with Witblox, an Indian company specializing in robotics products for kids. For more information about Witblox, visit their official site:</p>
+        <button onclick="window.open('https://witblox.com', '_blank')">Witblox</button>
+    </section>
+
+    <section id="educational-journey">
+        <h2>Educational Journey</h2>
+        <p>He embarked on his educational journey, starting with Montessori School Kukatpally for nursery, Geetanjali Olympiad School Kukatpally for LKG and UKG, and Unicent School Bachupally from the first class until the present.</p>
+    </section>
+
+    <section id="creative-flair">
+        <h2>Creative Flair</h2>
+        <p>At the age of 9, he showcased his artistic side through impressive drawings. But he lost interest in art and doesn't draw anymore. View his creations:</p>
+        <div class="image-container">
+            <img src="https://anivem.github.io/c/2.jpg">
+            <img src="https://anivem.github.io/c/3.jpg">
+            <img src="https://anivem.github.io/c/4.jpg">
+            <img src="https://anivem.github.io/c/5.jpg">
+            <img src="https://anivem.github.io/c/6.jpg">
+            <img src="https://anivem.github.io/c/7.jpg">
+            <img src="https://anivem.github.io/c/8.jpg">
+            <img src="https://anivem.github.io/c/10.jpg">
+            <img src="https://anivem.github.io/c/11.jpg">
+        </div>
+<h3>This is one of his drawings which was printed in "THE TIMES OF INDIA" STUDENT EDITION in the Painters' Gallery:</h3>
+<img src="https://anivem.github.io/c/37.jpg">
+    </section>
+
+    <section id="adventures-hobbies">
+        <h2>Adventures and Hobbies</h2>
+        <div class="image-container">
+            <img src="https://anivem.github.io/c/18.jpg">
+        </div>
+        <p>Aside from his technical pursuits, he enjoys various adventures and hobbies:</p>
+        <ul>
+            <li>Boating</li>
+            <li>Trekking or Hill Climbing</li>
+            <li>Cooking</li>
+        </ul>
+        <p>Here's an image of one of his recipes - egg fried rice:</p>
+        <div class="image-container">
+            <img src="https://anivem.github.io/c/15.jpg">
+        </div>
+    </section>
+
+    <section id="cooking">
+        <h2>Culinary Delights</h2>
+        <p>His culinary adventures include making delicious recipes like paneer jalfrezi, mushroom masala, egg fried rice, and pancakes. Check out some images:</p>
+        <div class="image-container">
+            <img width: 50%; src="https://anivem.github.io/c/17.jpg">
+            <img src="https://anivem.github.io/c/22.jpg">
+<img src="https://anivem.github.io/c/35.jpg">
+<img src="https://anivem.github.io/c/15.jpg">
+            <!-- Add caption: Pancakes -->
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Some of his achievements:</h2>
+        <ul>
+            <li>School Rank 1 in International English Olympiad</li>
+            <li>Twice: School Rank 1 in International General Knowledge Olympiad</li>
+            <li>Twice: School Rank 2 in National Science Olympiad</li>
+            <li>School Rank 3 in International Mathematics Olympiad</li>
+            <li>Twice: School Rank 2 in Interschool elocution competition</li>
+            <li>One of the winners in the camel art contest in zonal level.</li>
+            <!-- Add more achievements -->
+        </ul>
+    </section>
+
+    <section id="facts">
+        <h2>Facts about him</h2>
+
+<li>            He uses multiple AI tools.
+        </li>
+        <li>He can create images with AI with various free AI platforms.</li>
+        <li>He knows various Generative AI platforms which are free.</li>
+        <li>He can create presentations with AI with various free AI platforms.</li>
+        <li>He can modify audio with AI with various free AI platforms.</li>
+        <li>He likes decoding unfamiliar languages.</li>
+<li>He didn't watch any video to make the recipes which are present above</li>
+<li> He asked microsoft copilot to give the recipe and instructions. 
+</li>
+<li>He made the recipes just by looking at the instructions.</li>
+<li>All the recipes shown above are 99% made by him.</li>
+        <p>Few of his famous designs:</p>
+        <img src="https://anivem.github.io/c/25.jpg">
+        <img src="https://anivem.github.io/c/26.jpg">
+        <img src="https://anivem.github.io/c/27.jpg">
+        <img src="https://anivem.github.io/c/32.png">
+        <img src="https://anivem.github.io/c/33.png">
+        <img src="https://anivem.github.io/c/34.png">
+    </section>
+
+    <section id="pics">
+        <h2>Some of his pictures:</h2>
+        <div class="image-container">
+<img src="https://anivem.github.io/c/12.jpg">            
+<img src="https://anivem.github.io/c/36.jpg">
+            <img src="https://anivem.github.io/c/30.jpg">
+            <img src="https://anivem.github.io/c/23.jpg">
+            <img src="https://anivem.github.io/c/16.jpg">
+            <img src="https://anivem.github.io/c/14.jpg">
+            <img src="https://anivem.github.io/c/24.jpg">
+            <img src="https://anivem.github.io/c/31.jpg">
+        </div>
+        <p>Enjoy navigating through Anirudh's vibrant world, filled with creativity, innovation, and a zest for life!</p>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>Anirudh Vempati</p>
+    </footer>
+</body>
+
+</html>
